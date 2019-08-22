@@ -17,7 +17,7 @@ const Router = () => {
           </Route>
         );
       })}
-      <Route component={<PageNotFound />} />
+      <Route component={() => <PageNotFound />} />
     </Switch>
   );
 };
