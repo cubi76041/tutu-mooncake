@@ -12,7 +12,11 @@ const Router = () => {
         const ChildComponent = () => component || render || <PageNotFound />;
 
         return (
-          <Route path={routePath} exact={exact === undefined ? true : exact}>
+          <Route
+            path={routePath}
+            exact={exact === undefined ? true : exact}
+            key={routePath}
+          >
             <ChildComponent />
           </Route>
         );

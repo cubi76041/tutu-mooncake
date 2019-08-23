@@ -1,0 +1,10 @@
+.SlideCover {
+  .SlideCoverImage {
+    width: 100%;
+
+    @media screen and (min-width: 992px) {
+      max-height: 800px;
+      object-fit: cover;
+    }
+  }
+}
